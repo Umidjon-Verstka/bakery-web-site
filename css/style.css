@@ -1,0 +1,557 @@
+/* ---VARIABLES---------------------------------------------- */
+:root{
+    /* --name: value */
+    --bg-color: #ffe2b0;
+    --main-color: #000;
+    --main-font-family: "Roboto", sans-serif;
+    --two-font-family: "Philosopher", sans-serif;
+    --main-font-weight: 500;
+    --main-font-size: 18px;
+}
+/* ---MAIN STYLE---------------------------------------------- */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+html,
+body {
+    height: 100%;
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    font-family: var(--main-font-family);
+    font-weight: var(--main-font-weight);
+    font-size: var(--main-font-size);
+    line-height: 1;
+}
+/* ---MAIN STYLE END---------------------------------------------- */
+
+/* ---WRAPPER---------------------------------------------- */
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+/* ---WRAPPER END---------------------------------------------- */
+
+/* ---CONTAINER---------------------------------------------- */
+._container {
+    max-width: 1440px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: content-box;
+}
+/* ---CONTAINER END---------------------------------------------- */
+
+/* ---DUPLICATE PARTS---------------------------------------------- */
+hr{
+    width: 1024px;
+    height: 1px;
+    background-color: #999;
+    margin: 0px auto 20px auto;
+}
+/* coding here */
+/* ---DUPLICATE PARTS END---------------------------------------------- */
+
+/* ---IMG BG---------------------------------------------- */
+._ibg {
+    position: relative;
+}
+._ibg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+/* ---IMG BG END---------------------------------------------- */
+
+
+/* LET'S GO CODING... GOOD LUCK :) */
+/* ---HEADER SECTION---------------------------------------------- */
+/* STYLING CLASS */
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
+.header__container {
+    display: flex;
+    min-height: 104px; /* exmp 104px*/
+    align-items: center;
+}
+.header__logo {
+    margin: 0px auto 20px auto;
+}
+.header__menu {
+}
+.menu {
+    margin: 0px 0px 20px 0px;
+}
+.menu__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.menu__item {
+}
+.menu__item:not(:last-child){
+    margin: 0px 100px 0px 0px;
+}
+.menu__link {
+    color: var(--main-color);
+    font-weight: 700;
+    transition: opacity 0.3s linear 0s;
+}
+.menu__link:hover{
+    opacity: 0.8;
+}
+/* STYLING CLASS END*/
+
+/* MEDIA QUERY */
+/* max-width: 2560px 4K */
+@media (max-width: 2560px) {
+    /* classes */
+}
+/* max-width: 1440 Laptop L */
+@media (max-width: 1440px) {
+    /* classes */
+}
+/* max-width: 1024px Laptop */
+@media (max-width: 1024px) {
+    /* classes */
+    
+}
+/* max-width: 768px Table */
+@media (max-width: 768px) {
+    /* classes */
+    .menu__item:not(:last-child){
+        margin: 0px 50px 0px 0px;
+    }
+    .menu__link {
+        font-size: 16px;
+    }
+}
+/* max-width: 425px Mobile L */
+@media (max-width: 425px) {
+    /* classes */
+    .menu__item:not(:last-child){
+        margin: 0px 0px 10px 0px;
+    }
+    .menu__list {
+        flex-direction: column;
+    }
+}
+/* max-width: 375px Mobile M */
+@media (max-width: 375px) {
+    /* classes */
+}
+/* max-width: 320px Mobile s */
+@media (max-width: 320px) {
+    /* classes */
+}
+/* MEDIA QUERY END*/
+/* ---HEADER SECTION END---------------------------------------------- */
+
+
+/* ---PAGE---------------------------------------------- */
+/* STYLING CLASS */
+.page{
+
+}
+.page__content-section {
+}
+.page__content__container {
+    width: 100%;
+}
+.page__section-1-section {
+}
+.page__section-1__container {
+}
+/* STYLING CLASS END*/
+/* MEDIA QUERY */
+@media (max-width: 2560px) {
+    /* classes */
+}
+/* max-width: 1440 Laptop L */
+@media (max-width: 1440px) {
+    /* classes */
+}
+/* max-width: 1024px Laptop */
+@media (max-width: 1024px) {
+    /* classes */
+}
+/* max-width: 768px Table */
+@media (max-width: 768px) {
+    /* classes */
+}
+/* max-width: 425px Mobile L */
+@media (max-width: 425px) {
+    /* classes */
+}
+/* max-width: 375px Mobile M */
+@media (max-width: 375px) {
+    /* classes */
+}
+/* max-width: 320px Mobile s */
+@media (max-width: 320px) {
+    /* classes */
+}
+/* MEDIA QUERY END*/
+/* ---PAGE END---------------------------------------------- */
+
+
+/* ---content---------------------------------------------- */
+/* STYLING CLASS */
+.content-section {
+    width: 100%;
+    padding: 160px 0px 0px 0px;
+    margin: 0px 0px 20px 0px;
+}
+.content-section__body {
+    width: 100%;
+    min-height: 640px;
+    background-image: url(../img/pages/content.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.content-section__info {
+    position: absolute;
+    left: 53%;
+    top: 53%;
+    width: 420px;
+    height: 190px;
+    background: linear-gradient(180deg, rgba(244,213,178, 0.8) 0%, rgba(234,156,65,0.8) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-section__border{
+    width: 390px;
+    height: 160px;
+    border: 1px solid #000;
+    padding: 17px 20px 0px 28px;
+}
+.content-section__title {
+    font-size: 36px;
+    font-family: var(--two-font-family);
+    margin: 0px 0px 9px 0px;
+}
+.content-section__text {
+    font-size: 12px;
+    line-height: calc(16 / 12 * 100%);
+}
+/* STYLING CLASS END*/
+
+/* MEDIA QUERY */
+/* max-width: 2560px 4K */
+@media (max-width: 2560px) {
+    /* classes */
+}
+/* max-width: 1440 Laptop L */
+@media (max-width: 1440px) {
+    /* classes */
+}
+/* max-width: 1024px Laptop */
+@media (max-width: 1024px) {
+    /* classes */
+}
+/* max-width: 768px Table */
+@media (max-width: 768px) {
+    /* classes */
+    .content-section__info{
+        display: none;
+    }
+}
+/* max-width: 425px Mobile L */
+@media (max-width: 425px) {
+    /* classes */
+    .content-section{
+        padding: 250px 0px 0px 0px;
+    }
+}
+/* max-width: 375px Mobile M */
+@media (max-width: 375px) {
+    /* classes */
+}
+/* max-width: 320px Mobile s */
+@media (max-width: 320px) {
+    /* classes */
+}
+/* MEDIA QUERY END*/
+/* ---content END---------------------------------------------- */
+
+/* ---section 1---------------------------------------------- */
+/* STYLING CLASS */
+.section-1-section {
+    margin: 0px 0px 20px 0px;
+   
+}
+.section-1-section__body {
+    min-height: 290px;
+    text-align: center;
+}
+.section-1-section__body img:not(:last-child) {
+    margin: 0px 76px 0px 0px;
+}
+/* STYLING CLASS END*/
+
+/* MEDIA QUERY */
+/* max-width: 2560px 4K */
+@media (max-width: 2560px) {
+    /* classes */
+}
+/* max-width: 1440 Laptop L */
+@media (max-width: 1440px) {
+    /* classes */
+}
+/* max-width: 1024px Laptop */
+@media (max-width: 1024px) {
+    /* classes */
+    .section-1-section__body img{
+        width: 230px;
+    }
+    .section-1-section__body img:not(:last-child) {
+        margin: 0px 36px 0px 0px;
+    }
+}
+/* max-width: 768px Table */
+@media (max-width: 768px) {
+    /* classes */
+    .section-1-section__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 290px;
+    }
+    .section-1-section__body img{
+        width: 290px;
+    }
+    .section-1-section__body img:not(:last-child) {
+        margin: 0px 0px 30px 0px;
+    }
+}
+/* max-width: 425px Mobile L */
+@media (max-width: 425px) {
+    /* classes */
+}
+/* max-width: 375px Mobile M */
+@media (max-width: 375px) {
+    /* classes */
+}
+/* max-width: 320px Mobile s */
+@media (max-width: 320px) {
+    /* classes */
+}
+/* MEDIA QUERY END*/
+/* ---section 1 END---------------------------------------------- */
+
+/* ---section 2---------------------------------------------- */
+/* STYLING CLASS */
+.page__section-2-section {
+}
+.section-2-section {
+}
+.page__section-2__container {
+}
+.section-2-section__body {
+    text-align: center;
+}
+.section-2-section__title {
+    font-size: 96px;
+    font-family: var(--two-font-family);
+    margin: 0px 0px 15px 0px;
+}
+.red {
+    color: #f15b40;
+}
+.section-2-section__text {
+    max-width: 1000px;
+    line-height: calc(20 / 18 * 100%);
+    margin: 0px auto 20px auto;
+}
+/* STYLING CLASS END*/
+
+/* MEDIA QUERY */
+/* max-width: 2560px 4K */
+@media (max-width: 2560px) {
+    /* classes */
+}
+/* max-width: 1440 Laptop L */
+@media (max-width: 1440px) {
+    /* classes */
+}
+/* max-width: 1024px Laptop */
+@media (max-width: 1024px) {
+    /* classes */
+    .section-2-section__title {
+        font-size: 76px;
+    }
+}
+/* max-width: 768px Table */
+@media (max-width: 768px) {
+    /* classes */
+    .section-2-section__title {
+        font-size: 56px;
+    }
+    .section-2-section__text {
+        font-size: 16px;
+    }
+}
+/* max-width: 425px Mobile L */
+@media (max-width: 425px) {
+    /* classes */
+    .section-2-section__title {
+        font-size: 46px;
+    }
+    .section-2-section__text {
+        font-size: 15px;
+    }
+}
+/* max-width: 375px Mobile M */
+@media (max-width: 375px) {
+    /* classes */
+    .section-2-section__title {
+        font-size: 30px;
+    }
+    .section-2-section__text {
+        font-size: 13px;
+    }
+}
+/* max-width: 320px Mobile s */
+@media (max-width: 320px) {
+    /* classes */
+}
+/* MEDIA QUERY END*/
+/* ---section 2 END---------------------------------------------- */
+
+/* ---section 3---------------------------------------------- */
+/* STYLING CLASS */
+.page__section-3-section {
+}
+.section-3-section {
+    text-align: center;
+}
+.page__section-3__container {
+}
+.section-3-section__body {
+}
+.section-3-section__title {
+    font-size: 36px;
+    font-family: var(--two-font-family);
+    margin: 0px 0px 20px 0px;
+}
+.section-3-section__map {
+    margin: 0px 0px 20px 0px;
+}
+.section-3-section__map iframe{
+    width: 100%;
+    height: 400px;
+    max-width: 900px;
+}
+/* STYLING CLASS END*/
+
+/* MEDIA QUERY */
+/* max-width: 2560px 4K */
+@media (max-width: 2560px) {
+    /* classes */
+}
+/* max-width: 1440 Laptop L */
+@media (max-width: 1440px) {
+    /* classes */
+}
+/* max-width: 1024px Laptop */
+@media (max-width: 1024px) {
+    /* classes */
+}
+/* max-width: 768px Table */
+@media (max-width: 768px) {
+    /* classes */
+}
+/* max-width: 425px Mobile L */
+@media (max-width: 425px) {
+    /* classes */
+}
+/* max-width: 375px Mobile M */
+@media (max-width: 375px) {
+    /* classes */
+}
+/* max-width: 320px Mobile s */
+@media (max-width: 320px) {
+    /* classes */
+}
+/* MEDIA QUERY END*/
+/* ---section 3 END---------------------------------------------- */
+
+/* ---FOOTER---------------------------------------------- */
+/* STYLING CLASS */
+.footer{
+    height: 80px;
+}
+/* STYLING CLASS END*/
+
+/* MEDIA QUERY */
+/* max-width: 2560px 4K */
+@media (max-width: 2560px) {
+    /* classes */
+}
+/* max-width: 1440 Laptop L */
+@media (max-width: 1440px) {
+    /* classes */
+}
+/* max-width: 1024px Laptop */
+@media (max-width: 1024px) {
+    /* classes */
+}
+/* max-width: 768px Table */
+@media (max-width: 768px) {
+    /* classes */
+}
+/* max-width: 425px Mobile L */
+@media (max-width: 425px) {
+    /* classes */
+    .footer{
+        height: 150px;
+    }
+}
+/* max-width: 375px Mobile M */
+@media (max-width: 375px) {
+    /* classes */
+}
+/* max-width: 320px Mobile s */
+@media (max-width: 320px) {
+    /* classes */
+}
+/* MEDIA QUERY END*/
+/* ---FOOTER END---------------------------------------------- */
